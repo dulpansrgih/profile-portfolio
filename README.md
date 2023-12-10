@@ -1,5 +1,5 @@
-# mini-portfolio
-Portifolio simplificado, destinados mais para o pessoal da areal de artes visuais
+# profile-portfolio
+Berikut ini saya lampirkan portfolio saya
 
 
-https://mor3sco.github.io/mini-portfolio/
+https://prof.dulpanadisaragih.com
