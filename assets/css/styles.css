@@ -375,6 +375,16 @@ body.dark-theme {
   background-color: var(--body-color);
 }
 
+
+/*=============== ABOUT ===============*/
+  ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #777;
+  }
+  
+
+
 /*=============== FOOTER ===============*/
 .footer__copy {
   display: block;
