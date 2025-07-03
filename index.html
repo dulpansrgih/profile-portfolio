@@ -1,264 +1,1203 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="id">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulpan Adi Saragih - Portfolio</title>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <!--  favicon  -->
+  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
 
-        <title>Profile Dulpan Adi Saragih</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
+  <!--  RemixIcon -->
+  <link href="assets/fonts/remixicon.css" rel="stylesheet" />
 
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            <!-- Insert your image, according to the example size of the portfolio -->
-                            <img src="assets/img/Dulpan Adi Saragih.png" alt="">
-                        </div>
-                    </div>
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/lightbox.css">
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
-                    <h2 class="profile__name">Dulpan Adi Saragih</h2>
-                    <h3 class="profile__profession">Human <b>Resource, Business, & Financial</b> Consulting</h3>
+  <!--  google font link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
-                    <ul class="profile__social">
-                        <a href="https://instagram.com/dulpansrgih_" target="_blank" class="profile__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/dulpansrgih" target="_blank" class="profile__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@dulpansofficial" target="_blank" class="profile__social-link">
-                            <i class="ri-youtube-line"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@dulpansrgih28_?_t=8lEe66Zsvab&_r=1" target="_blank" class="profile__social-link">
-                            <i class="ri-tiktok-line"></i>
-                        </a>
-                        
-                </div>
+<body>
 
-                <div class="profile__info grid">
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">3</h3>
-                        <p class="profile__info-description">
-                            Work <br> Experience
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">3.52</h3>
-                        <p class="profile__info-description">
-                            Temporary Value <br> Transcript
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">22</h3>
-                        <p class="profile__info-description">Years <br> Old</p>
-                    </div>
-                </div>
+  <!--   #MAIN    -->
+  <main>
 
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a download="" href="assets/pdf/War Profile Dulpan Adi Saragih.pdf" class="button">
-                        Download CV <i class="ri-download-line"></i>
-                    </a>
+    <!--  #SIDEBAR   -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
 
-                    <div class="profile__buttons-small">
-                         <!-- Insert your mail for profile -->
-                         <a href="mailto:dulpansmanagament.offc@gmail.com" target="_blank" class="button button__small button__gray">
-                            <i class="ri-mail-line"></i>
-                        </a>
-                        <!-- Insert a real number plus country code -->
-                        <a href="https://api.whatsapp.com/send?phone=6285229592941&text=Hello, more information! > via: prof.dulpanadisaragih.com" target="_blank" class="button button__small button__gray">
-                            <i class="ri-whatsapp-line"></i>
-                        </a>
-                        <!-- Insert your brand name or profile -->
-                        <a href="https://official.dulpanadisaragih.com/" target="_blank" class="button button__small button__gray">
-                            <i class="ri-information-line"></i>
-                        </a>
-                    </div>
-                </div>
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Dulpan Adi Saragih" width="80">
+        </figure>
+
+        <div class="info-content">
+           <h1 class="name" title="ASW" id="my-name">Dulpan Adi Saragih</h1>
+            <div class="dropping-texts" id="dropping-texts">
+              <div class="title">Human Capital & Org. Development 👍</div>
+              <div class="title">Business Development 😲</div>
+              <div class="title">Business Finance & Capital Market 🤔</div>
+              <div class="title">#apapun itu, tetap berjuang‼️🔥</div>
             </div>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:dulpansmanagement.offc@gmail.com" class="contact-link">dulpansmanagement.offc@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+6285229592941" class="contact-link">+62 85229592941</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2001-28-12">December 28, 2001</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Daerah Istimewa Yogyakarta</address>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <div class="blink"></div>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Availability</p>
+              <time datetime="Available to work" style="color: #ffda6b;">Available to work!</time>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a onclick="location.href='https://www.dulpanadisaragih.my.id/';" class="social-link">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a onclick="location.href='https://www.instagram.com/dulpansrgih_';" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a onclick="location.href='https://linkedin.openinapp.co/dulpansrgih';" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a onclick="location.href='https://www.dothebest.my.id/';" class="social-link">
+              <ion-icon name="bag-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a onclick="location.href='https://qris.dulpanadisaragih.my.id/';" class="social-link">
+              <ion-icon name="qr-code-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </aside>
+
+
+    <!--  #MAIN-CONTENT   -->
+    <div class="main-content">
+
+      <!--  NAVBAR  -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificated</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+          <li>
+            <button class="navbar-link" onclick="location.href='assets/cv/Dulpan Adi Saragih.pdf';" download class="button">
+          <i class="ri-download-line"></i> Curriculum Vitae</button>
+          </li>
+          <li>
+
+
+          <!-- 
+            <div class="menu-malasngoding">
+
+            <li class="navbar-item">
+              <button class="dropdown">Curriculum Vitae</a>
+              <ul class="isi-dropdown">
+                <li>
+                  <a class="navbar-link" onclick="location.href='assets/cv-Dulpan AS.pdf';" download class="button">
+                    <i class="ri-eye-line"></i> View CV
+                  </a>
+                  <a class="navbar-link" onclick="location.href='assets/cv-Dulpan AS.pdf';" download class="button">
+                    <i class="ri-download-line"></i> Download CV
+                  </a>
+                </li>
+              </ul>
+              </button>
+            </li>
+            </div>
+          -->
+
+        </ul>
+      </nav>
+
+      
+
+      <!--  #ABOUT   -->
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text" style="text-align: justify;">
+          <p>
+            Hallo semuanya,<br>
+            Nama saya adalah Dulpan Adi Saragih, seorang mahasiswa Strata-1 (S1) yang sedang menempuh studi 
+            Manajemen Bisnis di salah satu perguruan tinggi swasta di Daerah Istimewa Yogyakarta (DIY), 
+            yaitu Universitas Teknologi Yogyakarta. Saat ini, saya berada di semester 8 dan memiliki 
+            semangat tinggi untuk terus belajar guna mencapai cita-cita yang saya dambakan. 
+          </p>
+              <a href="#open-modal" style="color: hsl(0, 0%, 84%)">
+                  More...<i class="ri-external-link-fill"></i></a>
+            <div id="open-modal" class="modal-window">
+              <div>
+                <a href="#" title="Close" class="modal-close">Close</a>
+                <h2 class="h2 article-title">Dulpan Adi Saragih</h2>
+                <p class="timeline-text">
+                  Saya mengambil jurusan Manajemen Bisnis dengan fokus pada Sumber Daya Manusia (SDM), Pemasaran, 
+            dan Keuangan. Saya memiliki kemampuan analisis yang baik dan mampu bekerja sama dalam tim. 
+            Selain itu, saya memiliki pengalaman dalam organisasi di kampus, yaitu sebagai Bendahara Umum di 
+            Kelompok Studi Pasar Modal (KSPM), serta turut menjadi panitia dalam berbagai kegiatan organisasi. 
+            Saya juga dipercaya menjadi ketua panitia Kunjungan Industri yang diadakan di Mojokerto dan Kejayan. 
+            Selain itu, saya pernah menjadi Asisten Dosen untuk mata kuliah Manajemen Keuangan Praktik. 
+            Saya juga mampu mengoperasikan Microsoft Office dengan baik serta suka dengan tantangan baru dan memperluas pengalaman dan pengetahuan.
+              </p>
+                
+              </div>
+            </div>
+      </section>
+
+        <!--  #SERVICE  -->
+        <br>
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Experience</h4>
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Organization icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Organization</h4>
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <p class="service-item-text">
+                  Professional development of License & Certification for iOS and Android.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+
+        <!--  sc-l   -->
+        <section class="sc-l">
+          <h3 class="h3 sc-l-title">Project Social Link</h3>
+          <ul class="sc-l-list has-scrollbar">
+
+            <li class="sc-l-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+            <li class="sc-l-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+            <li class="sc-l-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+            <li class="sc-l-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+            <li class="sc-l-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+            <li class="sc-l-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </article>
+
+      
+      <!--  #RESUME  -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#about">
-                        About
-                    </button>
-                    <button class="filters__button" data-target="#resume">
-                        Resume
-                    </button>
-                    <button class="filters__button" data-target="#certificate">
-                        Certificate
-                    </button>
-                </ul>
+        <!--  #EXPERIENCE  -->
+        <br>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
 
-                <div class="filters__sections">
-                    <!--=============== ABOUT ===============-->
-                    <div class="about__content grid filters__active" data-content id="about">                      
-                        <article class="about__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+          <ol class="timeline-list">
+
+            <li class="timeline-item work-item" data-icon="../images/icon/kspm-uty.jpeg" title="KSPM UTY">
+              <h4 class="h4 timeline-item-title">Bendahara Umum</h4>
+              <p style="font-size: medium;">
+                <a href="https://www.instagram.com/kspm_uty/p/C2myFU2RhlF/" target="_blank" style="color: hsla(0, 0%, 84%, 0.7);" title="Click to view more details">
+                  Kelompok Studi Pasar Modal, UTY
+                  <span class="material-icons" style="font-size: 16px; vertical-align: middle;">open_in_new</span></a>
+                </p>
+              <span>Sept. 2023 - Sept. 2024</span>
+              <p class="timeline-text">
+                Tes....123.
+              </p>
+              <br>
+              <p class="timeline-text">
+                Job Deskribsi:
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                      <p style="color: hsla(0, 0%, 84%, 0.7)">1</p>
+                    </li>
+                    <li class="timeline-item">
+                      <p style="color: hsla(0, 0%, 84%, 0.7)">2</p>
+                    </li>
+                    <li class="timeline-item">
+                      <p style="color: hsla(0, 0%, 84%, 0.7)">3</p>
+                    </li>
+                    <li class="timeline-item">
+                      <p style="color: hsla(0, 0%, 84%, 0.7)">4</p>
+                    </li>
+                </ol>
+              </p>
+            </li>
+
+             <li class="timeline-item work-item" data-icon="../images/icon/syncore-logo.jpeg" title="Syncore">
+              <h4 class="h4 timeline-item-title">Magang (Bumbes.id)</h4>
+              <p style="font-size: medium;">
+                <a href="https://www.syncore.co.id/" target="_blank" style="color: hsla(0, 0%, 84%, 0.7);" title="Click to view more details">
+                  PT Syncore Indonesia, Bantul, Yogyakarta
+                  <span class="material-icons" style="font-size: 16px; vertical-align: middle;">open_in_new</span></a>
+                </p>
+                <span>Feb. 2024 - Jun. 2024</span>
+              <p class="timeline-text">
+                Tekss..
+              </p>
+            </li>
+
+            <li class="timeline-item work-item" data-icon="../images/icon/kspm-uty.jpeg" title="KSPM UTY">
+              <h4 class="h4 timeline-item-title">Magang/Anggota</h4>
+              <p style="font-size: medium;">
+                <a href="https://www.kspmuty.com/" target="_blank" style="color: hsla(0, 0%, 84%, 0.7);" title="Click to view more details">
+                  Kelompok Studi Pasar Modal, UTY
+                  <span class="material-icons" style="font-size: 16px; vertical-align: middle;">open_in_new</span></a>
+                </p>
+                <span>Dec. 2022 - Agt. 2023</span>
+              <p class="timeline-text">
+                Tekss..
+              </p>
+            </li>
+
+            <li class="timeline-item work-item" data-icon="../images/icon/pln-logo.jpg" title="Gardu 150KV">
+              <h4 class="h4 timeline-item-title">Magang</h4>
+              <p style="font-size: medium;">
+                <a href="#" style="color: hsla(0, 0%, 84%, 0.7);" title="Click to view more details">
+                  PT Gardu Induk 150 KV Medono, Pekalongan 
+                  <span class="material-icons" style="font-size: 16px; vertical-align: middle;">open_in_new</span></a>
+                </p>
+              <span>Jan. 2020 - Feb. 2020</span>
+              <p class="timeline-text">
+                Teksss
+              </p>
+            </li>
+
+          </ol>
+        </section>
+
+        <!--  #ACTIVITY & ACHIEVEMENT -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Activity & Achievement</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item work-item" data-icon="../images/icon/kspm-uty.jpeg" title="KSPM UTY">
+              <h4 class="h4 timeline-item-title">Panitia</h4>
+              <p style="font-size: medium;">
+                <a href="https://www.instagram.com/kspm_uty/p/C2myFU2RhlF/" target="_blank" style="color: hsla(0, 0%, 84%, 0.7);" title="Click to view more details">
+                  Kelompok Studi Pasar Modal, UTY
+                  <span class="material-icons" style="font-size: 16px; vertical-align: middle;">open_in_new</span></a>
+                </p>
+              <span>Sept. 2023 - Sept. 2024</span>
+              <p class="timeline-text">
+                Tes....123.
+              </p>
+              <br>
+              <p class="timeline-text">
+                Job Deskribsi:
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                      <p style="color: hsla(0, 0%, 84%, 0.7)">1</p>
+                    </li>
+                    <li class="timeline-item">
+                      <p style="color: hsla(0, 0%, 84%, 0.7)">2</p>
+                    </li>
+                    <li class="timeline-item">
+                      <p style="color: hsla(0, 0%, 84%, 0.7)">3</p>
+                    </li>
+                    <li class="timeline-item">
+                      <p style="color: hsla(0, 0%, 84%, 0.7)">4</p>
+                    </li>
+                </ol>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Development Web </h4>
+              <p style="color: hsla(0, 0%, 84%, 0.7); font-size:medium;"><i>Beginner</i> 😲</p>
+              <span>Feb. 2024 - Jun. 2024</span>
+              <p class="timeline-text">
+                Tekss..
+              </p>
+            </li>
+
+
+
+          </ol>
+        </section>
+
+        <!--  #EDUCATION   -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+          
+            <!--  ##Kolom Tambah Study##   -->
+
+
+             <li class="timeline-item work-item" data-icon="../images/icon/Logo-UTY.png" title="UTY">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://uty.ac.id/" target="_blank" style="color: hsl(0, 0%, 100%);" title="Click to view more details">Universitas Teknologi Yogyakarta
+                  <span class="material-icons" style="font-size: 16px; vertical-align: middle;">open_in_new</span></a>
+              </h4>
+              <p style="color: hsla(0, 0%, 84%, 0.7); font-size:medium;"><i>Jurusan Manajemen Sumber Daya Manusia</i></p>
+              <span>Sept. 2021 — Now</span>
+              
+              <p class="timeline-text">
+                Klik dibawah ini untuk membanca selengkapnya
+              </p>
+              <input class="btn btn-extend" type="button" value="View Details" onclick="this.value=this.value=='View Details'?'Hide Details':'View Details';">
+              <div class="focus">
+                <div>
+                  <p class="timeline-text">Aktivitas Kegiatan & Organisasi:
+                    
+                    <ol class="timeline-list">
+                      <li class="timeline-item">
+                        <p style="color: hsla(0, 0%, 84%, 0.7)">Menjadi Asisten Dosen Mata Kuliah Manajemen Keuangan Praktik (Kelas A, B, & C)</p>
+                      </li>
+                    </ol>
+                    
+                    <ol class="timeline-list">
+                      <li class="timeline-item">
+                        <p style="color: hsla(0, 0%, 84%, 0.7)">Semester 6 Magang di PT Syncore Indonesia</p>
+                      </li>
+                    </ol>
+                    
+                    <ol class="timeline-list">
+                      <li class="timeline-item">
+                        <p style="color: hsla(0, 0%, 84%, 0.7)">Menjadi Bendahara Umum di Kelompok Studi Pasar Modal UTY</p>
+                      </li>
+                    </ol>
+
+                  </p>
+                </div>
+            </li>
+
+            <li class="timeline-item work-item" data-icon="../images/icon/smkn4-pekalongan.png" title="SMKN4 Pekalongan">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://dapo.dikdasmen.go.id/sekolah/8550C5B32A94AA11F9D1#rekapitulasi" target="_blank" style="color: hsl(0, 0%, 100%);" title="Click to view more details">SMK Negeri 4 Pekalongan
+                  <span class="material-icons" style="font-size: 16px; vertical-align: middle;">open_in_new</span></a>
+              </h4>
+              <p style="color: hsla(0, 0%, 84%, 0.7); font-size: medium;"><i>Jurusan Teknik Jaringan Tenaga Listrik</i></p>
+              <span>Jul. 2018 - May. 2021</span>
+              <p class="timeline-text">
+                Klik dibawah ini untuk membanca selengkapnya
+              </p>
+              <input class="btn btn-extend" type="button" value="View Details" onclick="this.value=this.value=='View Details'?'Hide Details':'View Details';">
+              <div class="focus">
+                <div>
+                  <p class="timeline-text">Aktivitas Kegiatan & Organisasi:
+                    <ol class="timeline-list">
+                      <li class="timeline-item">
+                        <p style="color: hsla(0, 0%, 84%, 0.7)">Menjadi Pradana Pramuka Pramuka 2 periode</p>
+                      </li>
+                    </ol>
+                    <ol class="timeline-list">
+                      <li class="timeline-item">
+                        <p style="color: hsla(0, 0%, 84%, 0.7)">Menjadi Penegak Bantara & Laksana</p>
+                      </li>
+                    </ol>
+                  </p>
+                </div>
+            </li>
+
+            <li class="timeline-item work-item" data-icon="../images/icon/smpn4-pekalongan.png" title="SMPN4 Pekalongan">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://dapo.dikdasmen.go.id/sekolah/CBE70AA8D0CD1039E1A6" target="_blank" style="color: hsl(0, 0%, 100%);" title="Click to view more details">SMP Negeri 4 Pekalongan
+                  <span class="material-icons" style="font-size: 16px; vertical-align: middle;">open_in_new</span></a>
+              </h4>
+              <span>Jul. 2015 - May. 2018</span>
+              <p class="timeline-text">
+                Klik dibawah ini untuk membanca selengkapnya
+              </p>
+              <input class="btn btn-extend" type="button" value="View Details" onclick="this.value=this.value=='View Details'?'Hide Details':'View Details';">
+              <div class="focus">
+                <div>
+                  <p class="timeline-text">Aktivitas Kegiatan & Organisasi:
+                    <ol class="timeline-list">
+                      <li class="timeline-item">
+                        <p style="color: hsla(0, 0%, 84%, 0.7)">Menjadi Pradana Pramuka</p>
+                      </li>
+                    </ol>
+                    <ol class="timeline-list">
+                      <li class="timeline-item">
+                        <p style="color: hsla(0, 0%, 84%, 0.7)">Ikut di Kepengurusan OSIS</p>
+                      </li>
+                    </ol>
+                    <ol class="timeline-list">
+                      <li class="timeline-item">
+                        <p style="color: hsla(0, 0%, 84%, 0.7)">Aktif Ekstrakulikuler Karate</p>
+                      </li>
+                    </ol>
+                  </p>
+                </div>
+            </li>
+
+          </ol>
+        </section>
+
+        
+
+  
+        <!--  #TESTIMONONIAL   -->
+         <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="newspaper-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3 publications-title">Publications</h3>
+          </div>
+          <ul class="testimonials-list has-scrollbar">
+                    
+            <!-------- Person 1---------->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Bestkuyy</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                             
-                            <div class="container">
-                                <center> <h1>Dulpan Adi Saragih</h1> </center>
-                                <br>
-                                <p align="justify">
-                                    
-                                    Halo, Selamat Datang di <a href="/"> Profile </a>  saya. <br>
-                                    Nama saya adalah <b>Dulpan Adi Saragih</b>, seorang mahasiswa <a href="https://pddikti.kemdiktisaintek.go.id/detail-mahasiswa/42c5goGZX_sennODUHjXqiM2i103Ztsf6C5mCbBirFNXtLA3G9fvhtGYjWTiDMwA7WxPGQ==">Strata-1 (S1)</a> yang sedang menempuh studi Manajemen Bisnis 
-                                    di salah satu perguruan tinggi swasta di Daerah Istimewa Yogyakarta (DIY), yaitu <a href="https://uty.ac.id/">Universitas Teknologi Yogyakarta</a>. 
-                                    Saat ini, saya berada di semester 8 dan memiliki semangat tinggi untuk terus belajar guna mencapai cita-cita yang saya dambakan. 
-                                    Saya mengambil jurusan Manajemen Bisnis dengan fokus pada Sumber Daya Manusia (SDM), Pemasaran, dan Keuangan.
-                                    <br> Saya memiliki kemampuan analisis yang baik dan mampu bekerja sama dalam tim. Selain itu, saya memiliki pengalaman dalam organisasi di kampus, 
-                                    yaitu sebagai Bendahara Umum di <a href="https://www.instagram.com/kspm_uty/">Kelompok Studi Pasar Modal (KSPM)</a>, serta turut menjadi panitia dalam berbagai kegiatan organisasi. 
-                                    Saya juga dipercaya menjadi ketua panitia Kunjungan Industri yang diadakan di Mojokerto dan Kejayan. Selain itu, 
-                                    saya pernah menjadi Asisten Dosen untuk mata kuliah Manajemen Keuangan Praktik.
-                                    Saya juga mampu mengoperasikan Microsoft Office dengan baik serta suka dengan tantangan baru dan memperluas pengalaman dan pengetahuan.
-                                    
-                                </p>
-                                <br>
-                                <h4>Prof</h4>
-                                <ul>
-                                    <li>Name : Dulpan Adi Saragih</li>
-                                    <li>Gender : Male</li>
-                                    <li>Addres : Sleman, D.I. Yogyakarta</li>
-                                    <li>Residence : Indonesia</li>
-                                    <li>Job : College Student, Management</li>
-                                    <li>University : Universitas Teknologi Yogyakarta</li>
-                                </ul>
-                                <br>
-                                <h4>Contact</h4>
-                                <ul>
-                                    <ul><i class="ri-mail-line"></i> Email : <a href="mailto:dulpansmanagament.offc@gmail.com">dulpansmanagament.offc@gmail.com</a></ul>
-                                    <ul><i class="ri-base-station-line"></i> Website : <a href="https://dulpanadisaragih.com/">www.dulpanadisaragih.com</a></ul>
-                                    <ul><i class="ri-user-line"></i> Profile : <a href="https://prof.dulpanadisaragih.com/">prof.dulpanadisaragih.com</a></ul>
-                                </ul>
-                                <br>
-                                <h4>Social Profile</h4>
-                                <ul>
-                                    <ul><i class="ri-linkedin-fill"></i></i><a href="https://linkedin.com/in/dulpansrgih/"> LinkedIn</a></ul>
-                                    <ul><i class="ri-youtube-line"></i><a href="https://youtube.com/@dulpansofficial/"> YouTube</a></ul>
-                                    <ul><i class="ri-instagram-line"></i> <a href="https://instagram.com/dulpansrgih_">Instagram</a></ul>
-                                    <ul><i class="ri-account-circle-line"></i><a href="https://dulpanadisaragih.com/p/about-me.html"> Author Blog</a></ul>
-
-                                </ul>
-                            </div>
-                            <br>
-                            <div class="profile__buttons">
-                                <!-- Insert your CV -->
-                                <a href="assets/pdf/LinkedIn Profile Dulpan Adi Saragih.pdf" class="button button__small">
-                                    LinkedIn <i class="ri-file-download-line"></i>
-                                </a>
-                        </article>
-                    </div>
-
-                    <!--=============== RESUME ===============-->
-                    <div class="resume__content grid" data-content id="resume">
-                        <article class="resume__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                           
-                            <div class="container">
-                                <h4>Resume</h4>
-                                <ul>
-                                    <li>Education</li>
-                                    <u>Activity</u>
-                                    <li>Experience</li>
-                                    <li>Organisasi</li>
-                                    <li>Skill</li>
-                                    <li>Activity</li>
-                                <br><br>
-                                <h4><b>UNDER DEVELOPMENT</b></h4> 
-                            </div>
-                            <br>
-                            <div class="profile__buttons">
-                                <!-- Insert your CV -->
-                                <a download="" href="assets/pdf/seunome.pdf" class="button button__small">
-                                    Transkip Nilai <i class="ri-file-chart-line"></i>
-                                </a>
-                        </article>
-                    </div>    
-
-                    <!--=============== CERTIFICATE ===============-->
-                    <div class="certificate__content grid" data-content id="certificate">
-                        <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                        <article class="certificate__card">
-                            <img src="assets/img/None Dulpan.png" alt="" class="certificate__img">
-
-                            <div class="certificate__modal">
-                                <div>
-                                    <span class="certificate__subtitle">All</span>
-                                    <h3 class="certificate__title">Folder Certificates</h3>
-                                    <a href="#" class="certificate__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="certificate__card">
-                            <img src="assets/img/Univ Tek Yog.png" alt="" class="certificate__img">
-
-                            <div class="certificate__modal">
-                                <div>
-                                    <span class="certificate__subtitle">All</span>
-                                    <h3 class="certificate__title">Certificate Learning & Activities on Campus</h3>
-                                    <a href="https://drive.google.com/drive/folders/1ThU6UsSQ-u1SCtBTPjr2iqcUTlwl6Q0M?usp=sharing" class="certificate__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="certificate__card">
-                            <img src="assets/img/Dulpan Adi Saragih of Certificate.png" alt="" class="certificate__img">
-    
-                            <div class="certificate__modal">
-                                <div>
-                                    <span class="certificate__subtitle">All Certificates</span>
-                                    <h3 class="certificate__title">List of My Certificates</h3>
-                                    <a href="https://onedrive.live.com/download?resid=4FAE668889A7C7AC%2110539&authkey=!AFd_sZobEet_ck4&em=2" class="certificate__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>    
-                        </article>
-                    </div>
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                <ul class="profile__social">
-                    <a href="https://drive.google.com/drive/folders/1wcP7QuNGn8gbzVVTfXu01waf39_22MBb?usp=sharing/" target="_blank" class="profile__social-link">
-                        <i class="ri-link"></i>
+                    <a onclick="location.href='https://www.instagram.com/';" class="social-link">
+                    <br>
+                    <ion-icon name="logo-instagram"></ion-icon>
                     </a>
-                </ul>
+                  </p>
+                </div>
 
-               <b>&#169; 2022<script>new Date().getFullYear()>2022&&document.write("-"+new Date().getFullYear());</script>
-                • <a href="">Dulpan Adi Saragih</a></b>
-            </span>
-        </footer>
+              </div>
+            </li>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+            <!-------- Person 2---------->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    
+                    <a onclick="location.href='https://www.instagram.com/';" class="social-link">
+                    <br>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </p>
+                </div>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+       <!--  #TESTIMONIAL MODAL   -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <time datetime="2021-06-14" style="color: hsl(45, 100%, 72%)">14 June, 2021</time>
+
+              <div data-modal-text></div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+         <section class="skill">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3 myskill-title">&nbsp; My Skills</h3>
+          </div>
+
+          <br>
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Microsoft Word</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Microsoft Excell</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Microsoft PowertPoin</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Canva Design</h5>
+                <data value="77">77%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 77%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Spreadsheet</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">RapidMiner</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Blogger</h5>
+                <data value="65">65%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SPSS</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+        <br><br>
+        <section class="skill">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3 class="h3 certifications-title">&nbsp; Language</h3>
+          </div>
+
+          <br>
+          <div class="chip">
+            <div class="chip__content">Manajemen Tim</div>
+          </div>
+          <div class="chip">
+            <div class="chip__content">Adaptasi</div>
+          </div>
+          <div class="chip">
+            <div class="chip__content">Leadership</div>
+          </div>
+          <div class="chip">
+            <div class="chip__content">CSS</div>
+          </div>
+          <div class="chip">
+            <div class="chip__content">HTML</div>
+          </div>
+
+        </section>
+      </article>
+
+
+
+
+
+      <!-- #CERTIFICATION -->
+
+      <article class="certificated" data-page="certificated">
+        <header>
+          <h2 class="h2 article-title">Certifacated</h2>
+        </header>
+
+        <br>
+        <section class="projects">
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Experience</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>License & Certification</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Organization</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Learning, etc.</button>
+            </li>
+            <li class="filter-item">
+              <button class="navbar-link" onclick="location.href='certificated/dulls-certificated.html';" download class="button">
+              More <i class="ri-external-link-fill"></i></button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Experience</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>License & Certification</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Organization</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Learning, etc.</button>
+              </li>
+              <li class="select-item">
+              <button class="navbar-link" onclick="location.href='certificated/dulls-certificated.html';" download class="button">
+              More <i class="ri-external-link-fill"></i></button>
+            </li>
+
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <!-- 1 -->
+            <li class="project-item  active" data-filter-item data-category="experience">
+              <a href="/certificated/0082-Dulpan Adi Saragih-Sertiifkat Magang 2024-UTY.pdf">
+                <a onclick="location.href='/certificated/0082-Dulpan Adi Saragih-Sertiifkat Magang 2024-UTY.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/0082-Dulpan Adi Saragih-Sertiifkat Magang 2024-UTY_page-0001.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Sertiifkat Magang 2024</h3>
+                <p class="project-category">Experience</p>
+              </a>
+            </li>
+
+            <!-- 2 -->
+            <li class="project-item  active" data-filter-item data-category="experience">
+                <a onclick="location.href='/certificated/Dulpan Adi S_Kepengurusan 2023-2024.jpg';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Dulpan Adi S_Kepengurusan 2023-2024.jpg" alt="dsm." loading="lazy">
+                </figure>
+                <h3 class="project-title">Kepengurusan KSPM 2023-2024</h3>
+                <p class="project-category">Experience</p>
+              </a>
+            </li>
+
+            <!-- 3 -->
+            <li class="project-item  active" data-filter-item data-category="experience">
+                <a onclick="location.href='/certificated/Dulpan Adi Saragih_KI.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Dulpan Adi Saragih_KI.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Kunjungan Industri KSPM UTY</h3>
+                <p class="project-category">Experience</p>
+              </a>
+            </li>
+
+            <!-- 4 -->
+            <li class="project-item  active" data-filter-item data-category="license & certification">
+               <a onclick="location.href='/certificated/Data Engineering Professional - RapidMiner.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Data Engineering Professional - RapidMiner.jpg" data-lightbox="galeria">
+                </figure>
+                <h3 class="project-title">Data Engineering Professional - RapidMiner</h3>
+                <p class="project-category">License & Certification</p>
+              </a>
+            </li>
+
+            <!-- 5 -->
+            <li class="project-item  active" data-filter-item data-category="license & certification">
+              <a onclick="location.href='/certificated/Machine Learning Professional.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Machine Learning Professional.jpg" data-lightbox="galeria">
+                </figure>
+                <h3 class="project-title">Machine Learning Professional</h3>
+                <p class="project-category">License & Certification</p>
+              </a>
+            </li>
+
+            <!-- 6 -->
+            <li class="project-item  active" data-filter-item data-category="experience">
+              <a onclick="location.href='/certificated/5210211146 Sertifikat Asisten Dosen.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/5210211146 Sertifikat Asisten Dosen.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Sertifikat Asisten Dosen MKP</h3>
+                <p class="project-category">Experience</p>
+              </a>
+            </li>
+
+            <!-- 7 -->
+            <li class="project-item  active" data-filter-item data-category="organization">
+                <a onclick="location.href='/certificated/Dulpan Adi S_Sitraba 2024.png';" data-lightbox="galeria">
+                  <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Dulpan Adi S_Sitraba 2024.png" alt="metaspark" loading="lazy">
+                </figure>
+                <h3 class="project-title">Sitraba KSPM 2024</h3>
+                <p class="project-category">Organization</p>
+              </a>
+            </li>
+
+            <!-- 8 -->
+            <li class="project-item  active" data-filter-item data-category="organization">
+                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Seminar Nasional KSPM UTY.png';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-certificate/Dulpan Adi Saragih_Seminar Nasional KSPM UTY.png" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Seminar Nasional KSPM UTY</h3>
+                <p class="project-category">Organization</p>
+              </a>
+            </li>
+
+            <!-- 9 -->
+            <li class="project-item  active" data-filter-item data-category="organization">
+              <a onclick="location.href='/certificated/Sertifikat Pelatihan Kepemimpinan Pengurus Organisasi UTY.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Sertifikat Pelatihan Kepemimpinan Pengurus Organisasi UTY.jpg" alt="fundo" loading="lazy">
+                </figure>
+                <h3 class="project-title">Sertifikat Pelatihan Kepemimpinan Pengurus Organisasi UTY</h3>
+                <p class="project-category">Organization</p>
+              </a>
+            </li>
+
+            <!-- 10 -->
+            <li class="project-item  active" data-filter-item data-category="organization">
+                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Musyawarah Besar.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Dulpan Adi Saragih_Musyawarah Besar.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="project-title">Musyawarah Besar KSPM</h3>
+                <p class="project-category">Organization</p>
+              </a>
+            </li>
+
+            <!-- 11 -->
+            <li class="project-item  active" data-filter-item data-category="organization">
+                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Sekolah Pasar Modal.png';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Dulpan Adi Saragih_Sekolah Pasar Modal.png" alt="summary" loading="lazy">
+                </figure>
+                <h3 class="project-title">Sekolah Pasar Modal</h3>
+                <p class="project-category">Organization</p>
+              </a>
+            </li>
+
+            <!-- 12 -->
+            <li class="project-item  active" data-filter-item data-category="learning, etc.">
+                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Literasi Keungan dan Digital UMKM.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Dulpan Adi Saragih_Literasi Keungan dan Digital UMKM.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Literasi Keuangan dan Digital UMKM</h3>
+                <p class="project-category">Learning, etc.</p>
+              </a>
+            </li>
+
+            <!-- 13 -->
+            <li class="project-item  active" data-filter-item data-category="learning, etc.">
+                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Career Session.png';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Dulpan Adi Saragih_Career Session.png" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Career Session</h3>
+                <p class="project-category">Learning, etc.</p>
+              </a>
+            </li>
+
+            <!-- 14 -->
+            <li class="project-item  active" data-filter-item data-category="learning, etc.">
+                <a onclick="location.href='certificated/Dulpan Adi Saragih_Stadium Generale UNY.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Dulpan Adi Saragih_Stadium Generale UNY.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Seminar Stadium Generale UNYY</h3>
+                <p class="project-category">Learning, etc.</p>
+              </a>
+            </li>
+
+            <!-- 15 -->
+            <li class="project-item  active" data-filter-item data-category="learning, etc.">
+                <a onclick="location.href='certificated/Sertifikat Peserta Gelar Wicara LTF Dulpan Adi Saragih.pdf';" data-lightbox="galeria">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/project-certificate/Sertifikat Peserta Gelar Wicara LTF Dulpan Adi Saragih.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Sertifikat Peserta Gelar Wicara LTF</h3>
+                <p class="project-category">Learning, etc.</p>
+              </a>
+            </li>
+            
+            <!-- Tambahan Sertifikattt -->
+
+          </ul>
+        </section>
+      </article>
+
+
+      <!-- #CONTACT -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <br>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="send-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Contact Form</h3>
+          </div>
+
+          <form action="mailto:dulpansofficial@gmail.com" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon><span>Send Message</span>
+            </button>
+          </form>
+
+        </section>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.97055414075!2d110.37484495000001!3d-7.803250450000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1751367233167!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <hr>
+        <br> 
+        <section class="timeline">
+
+          <a onclick="location.href='https://linkedin.openinapp.co/dulpansrgih';" class="title-wrapper" target="_blank">
+            <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+            <h4 style="color: var(--white-2);font-size: var(--fs-4);">Connect with me on LinkedIn</h4>
+          </a>
+          <a onclick="location.href='https://www.instagram.com/dulpansrgih_';" class="title-wrapper" target="_blank">
+            <div class="icon-box">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <h4 style="color: var(--white-2);font-size: var(--fs-4);">Connect with me on Instagram</h4>
+          </a>
+          <a onclick="location.href='https://wa.me/6285229592941';"class="title-wrapper">
+              <div class="icon-box">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+              </div>
+              <h4 style="color: var(--white-2);font-size: var(--fs-4);">Write me an WhatsApp</h4>
+          </a>
+          <a href="mailto:dulpansmanagement.offc@gmail.com" class="title-wrapper">
+              <div class="icon-box">
+                  <ion-icon name="mail-sharp"></ion-icon>
+              </div>
+              <h4 style="color: var(--white-2);font-size: var(--fs-4);">Write me an Email</h4>
+          </a>
+          <a onclick="location.href='https://www.dulpanadisaragih.my.id/';" class="title-wrapper">
+              <div class="icon-box">
+                  <ion-icon name="person-circle-outline"></ion-icon>
+              </div>
+              <h4 style="color: var(--white-2);font-size: var(--fs-4);">Profile</h4>
+          </a>
+
+        </section>
+      </article>
+      
+    </div>
+  </main>
+
+  <!-- custom js link  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/lightbox.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
 </html>
