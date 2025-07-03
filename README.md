@@ -5,4 +5,4 @@ Berikut ini saya lampirkan portfolio saya,
 
 
 
-https://prof.dulpanadisaragih.com
+https://prof.dulpanadisaragih.my.id
