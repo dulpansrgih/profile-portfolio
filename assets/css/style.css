@@ -1497,6 +1497,7 @@
   /* Button Toggle Show/Hide */
   .focus {
   overflow:hidden;
+  text-align: justify;
   }
 
   /* Open and Close Button Action*/
@@ -1687,5 +1688,3 @@
     border-radius: 1rem;
   }
 }
-
-
