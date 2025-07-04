@@ -1510,9 +1510,10 @@
   /*This hides the  transition effects*/
   .btn-extend {
   margin:1px 0;
-  width: 85px;
+  width: 100px;
   color: hsl(45, 61%, 63%);
   font-size: medium;
+  border-radius: 15px; /* Sudut melengkung */
   }
 
 
