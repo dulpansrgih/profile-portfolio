@@ -209,12 +209,12 @@
             <br>
             Dalam hal pengalaman organisasi, saya dipercaya menjabat sebagai Bendahara Umum di Kelompok Studi Pasar Modal (KSPM), di mana saya bertanggung jawab dalam mengelola keuangan organisasi, menyusun laporan pertanggungjawaban, dan mengatur alur kas kegiatan edukatif yang melibatkan mitra eksternal.
             Selain itu, ...
-            <a href="#open-pop" style="color: hsl(0, 0%, 84%)"> More...<i class="ri-external-link-fill"></i></a>
-            <div id="open-pop" class="pop-window">
-              <div>
+            <a href="#more" style="color: hsl(0, 0%, 84%)"> More...<i class="ri-external-link-fill"></i></a>
+            <div id="more" class="pop-window">
+            <div class="pop-content">
                 <a href="#" title="Close" class="pop-close">Close &times;</a>
                 <h2 class="h2 article-title">Dulpan Adi Saragih</h2>
-                <p class="pop-text">
+                <div class="pop-text">
                   ... Selain itu, saya aktif terlibat sebagai panitia dalam berbagai kegiatan kampus yang bersifat akademik dan non-akademik, termasuk dipercaya menjadi Ketua Panitia Kunjungan Industri.
                   Adapun kegiatan menjadi panitia lain sebagai berikut:
                   saya dipercaya sebagai Koordinator Acara dalam Seminar Nasional Pasar Modal yang dilaksanakan pada 5 Februari 2024, menghadirkan tiga narasumber dari Jakarta dan Yogyakarta dengan total peserta 854 orang (280 peserta offline dan 574 peserta online)
@@ -233,7 +233,10 @@
                   <div class="icon-box">
                       <ion-icon name="logo-linkedin"></ion-icon>
                   </div>
-                </a>
+                </a>  
+                </div>
+            </div>
+            </div>
           </p>
            
       </section>
@@ -1072,7 +1075,7 @@
               <button data-filter-btn>Learning, etc.</button>
             </li>
             <li class="filter-item">
-              <button class="navbar-link" onclick="location.href='certificated/dulls-certificated.html';" download class="button">
+              <button class="navbar-link" onclick="location.href='/dulls-certificated.html';" download class="button">
               More <i class="ri-external-link-fill"></i></button>
             </li>
 
@@ -1112,16 +1115,27 @@
           </div>
 
           <ul class="project-list">
+            <!-- Lightbox Sertifikat -->
+            <div id="lightbox-certificate" style="display:none; position:fixed; z-index:9999; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); align-items:center; justify-content:center; flex-direction:column;">
+              <span id="lightbox-close" style="color:#fff; font-size:2rem; position:absolute; top:30px; right:40px; cursor:pointer;">&times;</span>
+              <img id="lightbox-img" src="" alt="" style="max-width:90vw; max-height:70vh; border-radius:10px; box-shadow:0 0 20px #000;">
+              <div id="lightbox-title" style="color:#fff; margin-top:16px; font-size:1.1rem; font-weight:600; text-align:center;"></div>
+              <div class="lightbox-controls" style="margin-top:20px; display:flex; gap:10px; justify-content:center;">
+                <button id="lightbox-prev" style="padding:8px 18px; border-radius:5px;">⟨ Prev</button>
+                <button id="lightbox-download" style="padding:8px 18px; border-radius:5px;">⬇ Unduh</button>
+                <button id="lightbox-next" style="padding:8px 18px; border-radius:5px;">Next ⟩</button>
+              </div>
+            </div>
 
             <!-- 1 -->
             <li class="project-item  active" data-filter-item data-category="experience">
-              <a href="/certificated/0082-Dulpan Adi Saragih-Sertiifkat Magang 2024-UTY.pdf">
-                <a onclick="location.href='/certificated/0082-Dulpan Adi Saragih-Sertiifkat Magang 2024-UTY.pdf';" data-lightbox="galeria">
+                <<a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/0082-Dulpan Adi Saragih-Sertiifkat Magang 2024-UTY_page-0001.jpg" alt="arrival" loading="lazy">
+                  <img src="certificated/project-thumbnail/0082-Dulpan Adi Saragih-Sertiifkat Magang 2024-UTY_page-0001.jpg" alt="Sertiifkat Magang 2024" data-title="Sertiifkat Magang 2024">
                 </figure>
                 <h3 class="project-title">Sertiifkat Magang 2024</h3>
                 <p class="project-category">Experience</p>
@@ -1130,12 +1144,13 @@
 
             <!-- 2 -->
             <li class="project-item  active" data-filter-item data-category="experience">
-                <a onclick="location.href='/certificated/Dulpan Adi S_Kepengurusan 2023-2024.jpg';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Dulpan Adi S_Kepengurusan 2023-2024.jpg" alt="kspm." loading="lazy">
+                  <img src="certificated/project-thumbnail/Dulpan Adi S_Kepengurusan 2023-2024.jpg" data-title="Dulpan Adi S_Kepengurusan 2023-2024">
                 </figure>
                 <h3 class="project-title">Kepengurusan KSPM 2023-2024</h3>
                 <p class="project-category">Experience</p>
@@ -1144,12 +1159,13 @@
 
             <!-- 3 -->
             <li class="project-item  active" data-filter-item data-category="experience">
-                <a onclick="location.href='/certificated/Dulpan Adi Saragih_KI.pdf';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_KI.jpg" alt="ki" loading="lazy">
+                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_KI.jpg" data-title="Dulpan Adi Saragih_KI">
                 </figure>
                 <h3 class="project-title">Kunjungan Industri KSPM UTY</h3>
                 <p class="project-category">Experience</p>
@@ -1158,12 +1174,13 @@
 
             <!-- 4 -->
             <li class="project-item  active" data-filter-item data-category="license & certification">
-               <a onclick="location.href='/certificated/Data Engineering Professional - RapidMiner.pdf';" data-lightbox="galeria">
+               <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Data Engineering Professional - RapidMiner.jpg" data-lightbox="galeria">
+                  <img src="certificated/project-thumbnail/Data Engineering Professional - RapidMiner.jpg" data-title="Data Engineering Professional - RapidMiner">
                 </figure>
                 <h3 class="project-title">Data Engineering Professional - RapidMiner</h3>
                 <p class="project-category">License & Certification</p>
@@ -1172,12 +1189,13 @@
 
             <!-- 5 -->
             <li class="project-item  active" data-filter-item data-category="license & certification">
-              <a onclick="location.href='/certificated/Machine Learning Professional.pdf';" data-lightbox="galeria">
+              <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Machine Learning Professional.jpg" data-lightbox="galeria">
+                  <img src="certificated/project-thumbnail/Machine Learning Professional.jpg" data-title="Machine Learning Professional">
                 </figure>
                 <h3 class="project-title">Machine Learning Professional</h3>
                 <p class="project-category">License & Certification</p>
@@ -1186,12 +1204,13 @@
 
             <!-- 6 -->
             <li class="project-item  active" data-filter-item data-category="experience">
-              <a onclick="location.href='/certificated/5210211146 Sertifikat Asisten Dosen.pdf';" data-lightbox="galeria">
+              <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/5210211146 Sertifikat Asisten Dosen.jpg" alt="asdos" loading="lazy">
+                  <img src="certificated/project-thumbnail/5210211146 Sertifikat Asisten Dosen.jpg" data-title="5210211146 Sertifikat Asisten Dosen">
                 </figure>
                 <h3 class="project-title">Sertifikat Asisten Dosen MKP</h3>
                 <p class="project-category">Experience</p>
@@ -1200,12 +1219,13 @@
 
             <!-- 7 -->
             <li class="project-item  active" data-filter-item data-category="organization">
-                <a onclick="location.href='/certificated/Dulpan Adi S_Sitraba 2024.png';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                   <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Dulpan Adi S_Sitraba 2024.png" alt="sitraba" loading="lazy">
+                  <img src="certificated/project-thumbnail/Dulpan Adi S_Sitraba 2024.png" data-title="Dulpan Adi S_Sitraba 2024">
                 </figure>
                 <h3 class="project-title">Sitraba KSPM 2024</h3>
                 <p class="project-category">Organization</p>
@@ -1214,12 +1234,13 @@
 
             <!-- 8 -->
             <li class="project-item  active" data-filter-item data-category="organization">
-                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Seminar Nasional KSPM UTY.png';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Seminar Nasional KSPM UTY.png" alt="arrival" loading="lazy">
+                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Seminar Nasional KSPM UTY.png" data-title="Dulpan Adi Saragih_Seminar Nasional KSPM UTY">
                 </figure>
                 <h3 class="project-title">Seminar Nasional KSPM UTY</h3>
                 <p class="project-category">Organization</p>
@@ -1228,12 +1249,13 @@
 
             <!-- 9 -->
             <li class="project-item  active" data-filter-item data-category="organization">
-              <a onclick="location.href='/certificated/Sertifikat Pelatihan Kepemimpinan Pengurus Organisasi UTY.pdf';" data-lightbox="galeria">
+             <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Sertifikat Pelatihan Kepemimpinan Pengurus Organisasi UTY.jpg" alt="pelatihan" loading="lazy">
+                  <img src="certificated/project-thumbnail/Sertifikat Pelatihan Kepemimpinan Pengurus Organisasi UTY.jpg" data-title="Sertifikat Pelatihan Kepemimpinan Pengurus Organisasi UTY">
                 </figure>
                 <h3 class="project-title">Sertifikat Pelatihan Kepemimpinan Pengurus Organisasi UTY</h3>
                 <p class="project-category">Organization</p>
@@ -1242,12 +1264,13 @@
 
             <!-- 10 -->
             <li class="project-item  active" data-filter-item data-category="organization">
-                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Musyawarah Besar.pdf';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Musyawarah Besar.jpg" alt="mubes" loading="lazy">
+                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Musyawarah Besar.jpg" data-title="Dulpan Adi Saragih_Musyawarah Besar">
                 </figure>
                 <h3 class="project-title">Musyawarah Besar KSPM</h3>
                 <p class="project-category">Organization</p>
@@ -1256,12 +1279,13 @@
 
             <!-- 11 -->
             <li class="project-item  active" data-filter-item data-category="organization">
-                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Sekolah Pasar Modal.png';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Sekolah Pasar Modal.png" alt="spm" loading="lazy">
+                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Sekolah Pasar Modal.png" data-title="Dulpan Adi Saragih_Sekolah Pasar Modal">
                 </figure>
                 <h3 class="project-title">Sekolah Pasar Modal</h3>
                 <p class="project-category">Organization</p>
@@ -1270,12 +1294,13 @@
 
             <!-- 12 -->
             <li class="project-item  active" data-filter-item data-category="learning, etc.">
-                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Literasi Keungan dan Digital UMKM.pdf';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Literasi Keungan dan Digital UMKM.jpg" alt="umkm" loading="lazy">
+                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Literasi Keungan dan Digital UMKM.jpg" data-title="Dulpan Adi Saragih_Literasi Keungan dan Digital UMKM">
                 </figure>
                 <h3 class="project-title">Literasi Keuangan dan Digital UMKM</h3>
                 <p class="project-category">Learning, etc.</p>
@@ -1284,12 +1309,13 @@
 
             <!-- 13 -->
             <li class="project-item  active" data-filter-item data-category="learning, etc.">
-                <a onclick="location.href='/certificated/Dulpan Adi Saragih_Career Session.png';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Career Session.png" alt="carrer" loading="lazy">
+                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Career Session.png" data-title="Dulpan Adi Saragih_Career Session">
                 </figure>
                 <h3 class="project-title">Career Session</h3>
                 <p class="project-category">Learning, etc.</p>
@@ -1298,12 +1324,13 @@
 
             <!-- 14 -->
             <li class="project-item  active" data-filter-item data-category="learning, etc.">
-                <a onclick="location.href='certificated/Dulpan Adi Saragih_Stadium Generale UNY.pdf';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Stadium Generale UNY.jpg" alt="uny" loading="lazy">
+                  <img src="certificated/project-thumbnail/Dulpan Adi Saragih_Stadium Generale UNY.jpg" data-title="Dulpan Adi Saragih_Stadium Generale UNY">
                 </figure>
                 <h3 class="project-title">Seminar Stadium Generale UNYY</h3>
                 <p class="project-category">Learning, etc.</p>
@@ -1312,12 +1339,13 @@
 
             <!-- 15 -->
             <li class="project-item  active" data-filter-item data-category="learning, etc.">
-                <a onclick="location.href='certificated/Sertifikat Peserta Gelar Wicara LTF Dulpan Adi Saragih.pdf';" data-lightbox="galeria">
+                <a href="javascript:void(0)" class="lightbox-trigger">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                    <span class="view-text">View</span>
                   </div>
-                  <img src="certificated/project-thumbnail/Sertifikat Peserta Gelar Wicara LTF Dulpan Adi Saragih.jpg" alt="ltf" loading="lazy">
+                  <img src="certificated/project-thumbnail/Sertifikat Peserta Gelar Wicara LTF Dulpan Adi Saragih.jpg" data-title="Sertifikat Peserta Gelar Wicara LTF Dulpan Adi Saragih">
                 </figure>
                 <h3 class="project-title">Sertifikat Peserta Gelar Wicara LTF</h3>
                 <p class="project-category">Learning, etc.</p>
@@ -1346,16 +1374,17 @@
             <h3 class="h3">Contact Form</h3>
           </div>
 
-          <form action="mailto:dulpansofficial@gmail.com" class="form" data-form>
+          <form id="contact-form">
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required>
             </div>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon><span>Send Message</span>
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+            <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon><span>Send Message</span>
             </button>
-          </form>
+            <div id="form-status" style="margin-top:10px;"></div>
+        </form>
 
         </section>
 
