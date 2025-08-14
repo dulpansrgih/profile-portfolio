@@ -167,6 +167,30 @@
       margin-right: 10px;
       border-radius: 50%;
     }
+
+
+    /* ...existing code... */
+.filters-mobile {
+  display: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.filters-mobile select {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 2px solid #444;
+  background: hsl(35, 100%, 68%);
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 600px) {
+  .filters {
+    display: none;
+  }
+  .filters-mobile {
+    display: block;
+  }
+}
     
 
   </style>
@@ -182,12 +206,24 @@
     <br>
     <h1>My List Certificate</h1>
 
+     <!-- Select filter for PC -->
   <div class="filters">
     <button onclick="filterImages('all')">All</button>
     <button onclick="filterImages('experience')">Experience</button>
     <button onclick="filterImages('license-certification')">License & Certification</button>
     <button onclick="filterImages('organization')">Organization</button>
     <button onclick="filterImages('learning-etc.')">Learning, Etc.</button>
+  </div>
+
+  <!-- Contoh Select List Filter Sertifikat -->
+  <div class="filters-mobile">
+    <select id="filter-select-mobile">
+      <option value="all">All</option>
+      <option value="experience">Experience</option>
+      <option value="license-certification">License & Certification</option>
+      <option value="organization">Organization</option>
+      <option value="learning-etc.">Learning, Etc.</option>
+    </select>
   </div>
 
 
@@ -362,19 +398,12 @@
       </div>
     </div>
 
-    <div class="card learning-etc." onclick="openLightbox(21)">
-      <img src="/certificated/more/Dulpan Adi Saragih_SemNas2025.png" alt="Learning, etc.">
-      <div class="card-info">
-        <div class="filename">Dulpan Adi Saragih_SemNas2025.png</div>
-        <div class="meta">12/06/25· 0.5 MB</div>
-      </div>
-    </div>
-
 
   <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
+ <div class="lightbox" id="lightbox">
     <span class="close-btn" onclick="closeLightbox()">×</span>
     <img id="lightbox-img" src="">
+    <div id="lightbox-title" style="color:#fff; margin-top:16px; font-size:1.1rem; font-weight:600; text-align:center;"></div>
     <div class="lightbox-controls">
       <button onclick="prevImage()">⟨ Prev</button>
       <button onclick="downloadImage()">⬇ Download</button>
@@ -408,8 +437,6 @@
       '/certificated/more/Dulpan Adi Saragih_Kompetensi Karir Cemerlang.png', // (18)
       '/certificated/more/Dulpan Adi Saragih_Class Academy.png', // (19)
       '/certificated/more/5210211146_Seminar Nasional 2023.png', // (20)
-      '/certificated/more/Dulpan Adi Saragih_SemNas2025.png', // (21)
-      '',
     ];
 
     let current = 0;
@@ -451,7 +478,47 @@
 
     // Show all images by default
     filterImages('all');
-  </script>
 
+    // Mobile filter select
+const filterSelectMobile = document.getElementById('filter-select-mobile');
+if (filterSelectMobile) {
+  filterSelectMobile.addEventListener('change', function () {
+    const selectedValue = this.value;
+    filterImages(selectedValue); // <-- gunakan filterImages, bukan filterFunc
+  });
+}
+
+// ...existing code...
+    function openLightbox(i) {
+      current = i;
+      document.getElementById('lightbox-img').src = images[i];
+      // Ambil judul dari .filename pada card yang diklik
+      const cards = document.querySelectorAll('.card');
+      const filename = cards[i].querySelector('.filename').innerText;
+      document.getElementById('lightbox-title').innerText = filename;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+    
+    function nextImage() {
+    current = (current + 1) % images.length;
+    document.getElementById('lightbox-img').src = images[current];
+    // Update judul/keterangan
+    const cards = document.querySelectorAll('.card');
+    const filename = cards[current].querySelector('.filename').innerText;
+    document.getElementById('lightbox-title').innerText = filename;
+}
+
+  function prevImage() {
+  current = (current - 1 + images.length) % images.length;
+  document.getElementById('lightbox-img').src = images[current];
+  // Update judul/keterangan
+  const cards = document.querySelectorAll('.card');
+  const filename = cards[current].querySelector('.filename').innerText;
+  document.getElementById('lightbox-title').innerText = filename;
+}
+    
+    // ...existing code...
+
+  </script>
 </body>
 </html>
