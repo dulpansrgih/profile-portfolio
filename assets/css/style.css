@@ -1644,17 +1644,11 @@
     }
   }
 
+  
+
 
   /* Pop ChangeLog */
   .pop-window {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 22;
-    visibility: hidden;
-    transition: all 0.1s;
     &:target {
       visibility: visible;
       
@@ -1670,16 +1664,7 @@
     background: hsl(240, 4%, 11%) 100%;
   }
 }
-.pop-close {
-  color: #ffffff;
-  line-height: 50px;
-  font-size: 80%;
-  position: absolute;
-  right: 15px;
-  text-align: center;
-  top: 0;
-  width: 70px;
-}
+
 
 /* Demo Styles */
 .pop-window {
@@ -1691,3 +1676,190 @@
 .pop-text { 
   max-width: 1000px; 
 }
+
+/* Lighbox Certificated */
+.lightbox-controls button {
+  background: #ffda6b;
+  color: #222;
+  border: none;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.lightbox-controls button:hover {
+  background: #ffd23f;
+  color: #000;
+}
+
+/* Demo Certificated */
+.project-item-icon-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  opacity: 0;
+  background: rgba(0,0,0,0.6);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s;
+}
+
+.project-img:hover .project-item-icon-box {
+  opacity: 1;
+}
+
+.project-item-icon-box .view-text {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: none;
+  transition: opacity 0.2s;
+}
+
+.project-img:hover .project-item-icon-box .view-text {
+  display: inline;
+}
+
+
+/* Popup Overlay */
+.pop-content,
+.pop-text,
+.pop-close {
+  font-family: var(--ff-poppins), 'Poppins', Arial, Helvetica, sans-serif !important;
+  color: var(--light-gray); /* warna font sama seperti .about-text */
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+.pop-window {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(20, 20, 20, 0.85);
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+/* Show popup when targeted */
+.pop-window:target {
+  display: flex;
+}
+
+/* Popup Content Box */
+.pop-content {
+  padding: 32px 24px 24px 24px;
+  background: #23272f;
+  border-radius: 16px;
+  max-width: 95vw;
+  width: 480px;
+  max-height: 80vh;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pop-text {
+  margin-top: 12px;
+  padding-right: 8px;
+  max-height: 55vh;
+  overflow-y: auto;
+  /* warna font dan jarak baris sudah diatur di atas */
+}
+
+/* Scrollable Text */
+.pop-text {
+  overflow-y: auto;
+  max-height: 55vh;
+  margin-top: 12px;
+  padding-right: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eaeaea;
+}
+
+.pop-text::-webkit-scrollbar {
+  width: 8px;
+  background: #23272f;
+  border-radius: 8px;
+}
+
+.pop-text::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ffda6b 0%, #ffd23f 100%);
+  border-radius: 8px;
+  min-height: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 2px solid #23272f;
+}
+
+.pop-text::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ffd23f 0%, #ffda6b 100%);
+}
+
+.pop-text::-webkit-scrollbar-track {
+  background: #23272f;
+  border-radius: 8px;
+}
+
+/* Firefox */
+.pop-text {
+  scrollbar-width: thin;
+  scrollbar-color: #ffda6b #23272f;
+}
+
+/* Close Button */
+.pop-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  color: #ffda6b;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 8px 18px 8px 12px;
+  border-radius: 8px;
+  z-index: 2;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: nowrap;      /* <-- Tambahkan ini */
+  letter-spacing: 0.5px;    /* (opsional, agar lebih rapi) */
+}
+
+.pop-close:hover {
+  color: #fff;
+  background: rgba(255, 218, 107, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .pop-content {
+    width: 98vw;
+    max-width: 98vw;
+    padding: 18px 6vw 18px 6vw;
+  }
+  .pop-text {
+    max-height: 50vh;
+    font-size: 0.97rem;
+  }
+}
+
